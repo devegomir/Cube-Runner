@@ -108,11 +108,11 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!114 &259694622406961940
 MonoBehaviour:
@@ -128,8 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 259694622406961941}
   forwardForce: 2000
-  sidewaysForce: 120
-  jumpingForce: 250
+  sidewaysForce: 100
+  jumpingForce: 750
 --- !u!114 &259694622406961943
 MonoBehaviour:
   m_ObjectHideFlags: 0

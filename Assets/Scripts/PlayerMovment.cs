@@ -1,4 +1,3 @@
-using System.IO;
 using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
@@ -23,7 +22,7 @@ public class PlayerMovment : MonoBehaviour
         {
             rightMovment = true;
         }
-        if (Input.GetButton("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             jumping = true;
         }
@@ -47,7 +46,7 @@ public class PlayerMovment : MonoBehaviour
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
             leftMovment = false;
         }
-        if (jumping == true && transform.position.y < 1.01f && transform.position.y > 0.99f)
+        if (jumping == true && (transform.position.y < 1.01f && transform.position.y > 0.99f))
         {
             rb.AddForce(0, jumpingForce * Time.deltaTime, 0, ForceMode.VelocityChange);
             jumping = false;
