@@ -6,11 +6,14 @@ public class PlayerMovment : MonoBehaviour
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
     public float jumpingForce = 100f;
+    public int slowmosLeft = 2;
 
     private bool rightMovment;
     private bool leftMovment;
 
     private bool jumping;
+
+    private bool slowmoMode;
 
     private void Update()
     {
@@ -25,6 +28,10 @@ public class PlayerMovment : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jumping = true;
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            slowmoMode = true;
         }
         
     }
@@ -58,7 +65,24 @@ public class PlayerMovment : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
 
+        if (slowmoMode == true)
+        {
+            if (slowmosLeft > 0)
+            {
+                Time.timeScale = 0.5f;
+                Invoke("TimeScaleReset", 1f);
+                slowmoMode = false;
+                slowmosLeft--;
+            }
+            
+        }
+
         
+    }
+
+    public void TimeScaleReset()
+    {
+        Time.timeScale = 1f;
     }
 
     
