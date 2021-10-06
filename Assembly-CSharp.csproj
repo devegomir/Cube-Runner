@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{627624AC-BD46-EDE8-2AEB-EA83C90EEF82}</ProjectGuid>
+    <ProjectGuid>{6F03C154-A8E8-6A7C-796C-BC877FBB3F26}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,14 +54,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\PlayerMovment.cs" />
-    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\Welcome.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
-    <Compile Include="Assets\Scripts\Credits.cs" />
-    <Compile Include="Assets\Scripts\Welcome.cs" />
+    <Compile Include="Assets\StoneTrapTrigger.cs" />
+    <Compile Include="Assets\MovingObstacleScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
