@@ -54,6 +54,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+    <Compile Include="Assets\StoneTrapTrigger.cs" />
+    <Compile Include="Assets\MovingObstacleScript.cs" />
     <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\PlayerMovment.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
@@ -62,8 +64,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
-    <Compile Include="Assets\StoneTrapTrigger.cs" />
-    <Compile Include="Assets\MovingObstacleScript.cs" />
+    <Compile Include="Assets\ColorChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
