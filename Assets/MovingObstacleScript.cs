@@ -2,20 +2,25 @@ using UnityEngine;
 
 public class MovingObstacleScript : MonoBehaviour
 {
-    //Moves an Obstacle from left to right
-    public Transform cubeToTrans;
+    public Rigidbody physObject;
 
-    // Update is called once per frame
-    void Update()
+    public float speed = 200f;
+
+    bool turnAround;
+
+    private void Start()
     {
-        //CubeMovment();
+        physObject.AddForce(speed, 0, 0, ForceMode.Impulse);
     }
-
-    void CubeMovment()
+    private void OnTriggerEnter(Collider other)
     {
-        if (cubeToTrans.position.x != 7)
+        if (other.tag == "ChangeDirectionHelper")
         {
-            cubeToTrans.Translate(new Vector3(transform.position.x + 1 * Time.deltaTime, transform.position.y, transform.position.z));
+            physObject.velocity = Vector3.zero;
+            speed *= -1;
+            physObject.AddForce(speed, 0, 0, ForceMode.Impulse);
         }
     }
+
+    
 }
