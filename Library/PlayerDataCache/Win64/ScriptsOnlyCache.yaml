@@ -1,19 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ColorChange
     - Credits
     - EndTrigger
     - FollowPlayer
     - GameManager
     - LevelComplete
+    - MovingObstacleScript
     - PlayerCollision
     - PlayerMovment
     - Score
     - Welcome
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -60,19 +60,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1476}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2740}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -133,25 +133,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1784}
     - Class: 114
-      Script: {instanceID: 1886}
+      Script: {instanceID: 1890}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 2980}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 3510}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 4182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -216,108 +216,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 1886}
+      Script: {instanceID: 1784}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 1890}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 2980}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3510}
     - Class: 114
-      Script: {instanceID: 4176}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 134
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 258
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
-    Assets/Scenes/Level03.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 1436}
-    - Class: 114
-      Script: {instanceID: 1476}
-    - Class: 114
-      Script: {instanceID: 1570}
-    - Class: 114
-      Script: {instanceID: 1780}
-    - Class: 114
-      Script: {instanceID: 1886}
-    - Class: 114
-      Script: {instanceID: 2230}
-    - Class: 114
-      Script: {instanceID: 2330}
-    - Class: 114
-      Script: {instanceID: 2476}
-    - Class: 114
-      Script: {instanceID: 2656}
-    - Class: 114
-      Script: {instanceID: 2974}
-    - Class: 114
-      Script: {instanceID: 3504}
-    - Class: 114
-      Script: {instanceID: 3576}
-    - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 4182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -364,19 +283,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1476}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2480}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 3344}
+      Script: {instanceID: 2740}
+    - Class: 114
+      Script: {instanceID: 3350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -432,7 +353,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: 12fd8357d44c9739ed1813ccfb0d4ff5
+      Hash: fcdf477672cf69eebe7675921a1d7889
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCollision
@@ -450,10 +371,22 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 1de28b2a5ac969860c6fe1ceef9d0ef9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StoneTrapTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 1c98d8b4cbaac35028dedd23b1b0d09f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MovingObstacleScript
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -480,7 +413,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: baae9f22a7d434bdaa4064e54b5b7993
+      Hash: 529d2a303bbe4bf97d28c346c70fb54a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovment
@@ -592,6 +525,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 8fd137bde976f32aea53373a552071ed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColorChange
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -774,7 +713,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 754bc6bb73c10426d8afc4344f209e15
+      Hash: 77531b95cd6f735c1d3b6bb75fb2217a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -873,6 +812,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MenuScreen.unity
   - Assets/Scenes/Level01.unity
   - Assets/Scenes/Level02.unity
-  - Assets/Scenes/Level03.unity
   - Assets/Scenes/EndScreen.unity
-  playerPath: D:/Fortbildungen/Unity/Build Games/Cube Runner V 0.2/Cube Runner.exe
+  playerPath: D:/Fortbildungen/Unity/Build Games/Cube Runner V 0.3/Cube Sprinter.exe
