@@ -6,7 +6,7 @@ public class PlayerMovment : MonoBehaviour
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
     public float jumpingForce = 100f;
-    public int slowmosLeft = 2;
+    public int slowmosLeft = 1;
 
     private bool rightMovment;
     private bool leftMovment;
@@ -60,7 +60,7 @@ public class PlayerMovment : MonoBehaviour
         }
            
 
-        if (rb.position.y < -1f)
+        if (rb.position.y < -1f || rb.position.x < -9f || rb.position.x > 9f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
